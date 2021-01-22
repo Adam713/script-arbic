@@ -1,0 +1,12 @@
+adb shell pm grant jp.co.c_lis.ccl.morelocale android.permission.CHANGE_CONFIGURATION
+
+adb shell pm grant com.sightidea.locale android.permission.CHANGE_CONFIGURATION
+
+adb shell "am start -a android.intent.action.INSERT content://telephony/carriers --ei simId -1"
+
+adb shell am start -a android.intent.action.VIEW "http://www.youtube.com/watch?v=YRhFSWz_J3I"
+
+adb shell am start -a android.intent.action.VIEW -d "http://www.youtube.com/watch?v=YRhFSWz_J3I"
+
+
+adb devices -l
